@@ -1,0 +1,83 @@
+* {
+
+  font-family: 'Arvo', serif;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+ background: linear-gradient(45deg, #7400b8ff, #6930c3ff, #5e60ceff, #5390d9ff, #4ea8deff, #48bfe3ff);
+ background-size: 300% 300%;
+ animation: color 35s ease-in-out infinite;
+
+}
+
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+
+.App {
+  text-align: center;
+  
+}
+
+.input-group{
+  width: 40%;
+}
+
+.card{
+  -webkit-backdrop-filter: blur(60px);
+  backdrop-filter: blur(60px);
+  background-color: rgba(243,243,243,0.2);
+  box-shadow: 1px 1px 15px rgba(185, 235, 255, 0.548);
+  width: 75%;
+  border-radius: 15px;
+  max-width: 100%;
+  
+}
+
+.card-title{
+  position: absolute;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+
+.card-date{
+  position: absolute;
+  padding-left: 12px;
+  margin-top: 40px;
+}
+.card-hour{
+  position: absolute;
+  padding-left: 10px;
+  margin-top: 100px;
+  font-size: 60px;
+
+}
+
+.card-temp{
+  position: absolute;
+  padding-left: 10px;
+  margin-top: 210px;
+  font-size: 50px;
+}
+
+.card-desc{
+
+  position: absolute;
+  padding-left: 5px;
+  margin-top: 300px;
+  font-size: 20px;
+}
+
+
